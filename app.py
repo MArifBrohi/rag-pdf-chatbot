@@ -29,25 +29,38 @@ st.markdown("""
 }
 .chat-question {
     background: linear-gradient(135deg, #667eea, #764ba2);
-    color: white;
+    color: white !important;
     padding: 1rem;
     border-radius: 12px;
     margin: 0.5rem 0;
 }
 .chat-answer {
-    background: #f8f9fa;
+    background: var(--background-color);
+    border: 1px solid #667eea;
     border-left: 4px solid #667eea;
+    color: var(--text-color) !important;
     padding: 1rem;
     border-radius: 0 12px 12px 0;
     margin: 0.5rem 0;
 }
 .source-box {
-    background: #e8f4f8;
+    background: var(--background-color);
+    border: 1px solid #667eea;
     border-radius: 8px;
     padding: 0.5rem 1rem;
     font-size: 0.8rem;
-    color: #495057;
+    color: var(--text-color) !important;
     margin-top: 0.3rem;
+}
+.footer {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 2rem;
+    color: var(--text-color) !important;
+    opacity: 0.7;
+}
+p, div, span {
+    color: var(--text-color);
 }
 </style>
 """, unsafe_allow_html=True)
